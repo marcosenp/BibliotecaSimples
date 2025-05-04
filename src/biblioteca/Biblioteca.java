@@ -1,4 +1,4 @@
-package Biblioteca;
+package biblioteca;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -14,6 +14,9 @@ public class Biblioteca {
         return new ArrayList<>(livros);
     }
 
+/**
+ * Busca livros por autor, ignorando maiúsculas/minúsculas.
+ */
 public List<Livro> buscarPorAutor(String autor) {
     return livros.stream()
         .filter(livro -> livro.getAutor().equalsIgnoreCase(autor))
