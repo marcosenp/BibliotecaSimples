@@ -1,12 +1,11 @@
 package biblioteca;
 
 public class Livro {
-
     private String isbn;
     private String titulo;
     private String autor;
 
-    public Livro(String titulo, String autor) {
+    public Livro(String isbn, String titulo, String autor) {
         this.isbn = isbn;
         this.titulo = titulo;
         this.autor = autor;
@@ -22,10 +21,5 @@ public class Livro {
 
     public String getAutor() {
         return autor;
-    }
-
-    @Override
-    public String toString() {
-        return "Título: " + titulo + " | Autor: " + autor;
     }
 }
